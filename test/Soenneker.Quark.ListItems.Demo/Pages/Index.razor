@@ -1,0 +1,224 @@
+﻿@page "/"
+@using Microsoft.Extensions.Logging
+
+@inject ILogger<Index> Logger
+
+<div class="container">
+    <img src="https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png" />
+    <h1>Soenneker.Quark.ListItems Demo</h1>
+    <p>This page demonstrates the HTML List Item component from Quark.ListItems.</p>
+    <br />
+
+    <hr />
+
+    <h2>Basic List Item Usage</h2>
+    <p>The ListItem component provides semantic HTML list item elements for content display within ordered and unordered lists.</p>
+    
+    <div class="mb-3">
+        <h3>Unordered List with ListItems</h3>
+        <ul>
+            <ListItem>First list item with default styling</ListItem>
+            <ListItem>Second list item with default styling</ListItem>
+            <ListItem>Third list item with default styling</ListItem>
+        </ul>
+    </div>
+
+    <div class="mb-3">
+        <h3>Ordered List with ListItems</h3>
+        <ol>
+            <ListItem>First ordered list item</ListItem>
+            <ListItem>Second ordered list item</ListItem>
+            <ListItem>Third ordered list item</ListItem>
+        </ol>
+    </div>
+
+    <h2>List Items with Bootstrap Typography Classes</h2>
+    <div class="mb-3">
+        <h3>List Items with Heading Styles</h3>
+        <ul>
+            <ListItem Class="h1">Heading 1 Style List Item</ListItem>
+            <ListItem Class="h2">Heading 2 Style List Item</ListItem>
+            <ListItem Class="h3">Heading 3 Style List Item</ListItem>
+            <ListItem Class="h4">Heading 4 Style List Item</ListItem>
+            <ListItem Class="h5">Heading 5 Style List Item</ListItem>
+            <ListItem Class="h6">Heading 6 Style List Item</ListItem>
+        </ul>
+    </div>
+
+    <h2>List Items with Color Classes</h2>
+    <div class="mb-3">
+        <h3>Colored List Items</h3>
+        <ul>
+            <ListItem Class="text-primary">Primary colored list item text</ListItem>
+            <ListItem Class="text-secondary">Secondary colored list item text</ListItem>
+            <ListItem Class="text-success">Success colored list item text</ListItem>
+            <ListItem Class="text-danger">Danger colored list item text</ListItem>
+            <ListItem Class="text-warning">Warning colored list item text</ListItem>
+            <ListItem Class="text-info">Info colored list item text</ListItem>
+            <ListItem Class="text-light bg-dark p-2">Light text on dark background list item</ListItem>
+            <ListItem Class="text-dark">Dark colored list item text</ListItem>
+        </ul>
+    </div>
+
+    <h2>List Items with Font Weight Classes</h2>
+    <div class="mb-3">
+        <h3>Font Weight Variations</h3>
+        <ul>
+            <ListItem Class="fw-light">Light font weight list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="fw-normal">Normal font weight list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="fw-bold">Bold font weight list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="fw-bolder">Bolder font weight list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+        </ul>
+    </div>
+
+    <h2>List Items with Font Style Classes</h2>
+    <div class="mb-3">
+        <h3>Font Style Variations</h3>
+        <ul>
+            <ListItem Class="fst-normal">Normal font style list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="fst-italic">Italic font style list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="fst-oblique">Oblique font style list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+        </ul>
+    </div>
+
+    <h2>List Items with Text Decoration</h2>
+    <div class="mb-3">
+        <h3>Text Decoration Styles</h3>
+        <ul>
+            <ListItem Class="text-decoration-none">No text decoration list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="text-decoration-underline">Underlined list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="text-decoration-line-through">Strikethrough list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+        </ul>
+    </div>
+
+    <h2>List Items with Background Colors</h2>
+    <div class="mb-3">
+        <h3>Background Color Variations</h3>
+        <ul class="list-unstyled">
+            <ListItem Class="bg-primary text-white p-3 mb-2">Primary background list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="bg-secondary text-white p-3 mb-2">Secondary background list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="bg-success text-white p-3 mb-2">Success background list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="bg-danger text-white p-3 mb-2">Danger background list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="bg-warning text-dark p-3 mb-2">Warning background list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="bg-info text-white p-3 mb-2">Info background list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+        </ul>
+    </div>
+
+    <h2>List Items with Spacing</h2>
+    <div class="mb-3">
+        <h3>Spacing Variations</h3>
+        <ul class="list-unstyled">
+            <ListItem Class="m-1 p-1 bg-light mb-2">Margin and padding 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="m-2 p-2 bg-light mb-2">Margin and padding 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="m-3 p-3 bg-light mb-2">Margin and padding 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+            <ListItem Class="m-4 p-4 bg-light mb-2">Margin and padding 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListItem>
+        </ul>
+    </div>
+
+    <h2>List Items with Bootstrap Display Classes</h2>
+    <div class="mb-3">
+        <h3>Display Variations</h3>
+        <ul class="list-unstyled">
+            <ListItem Class="d-inline bg-primary text-white p-2 me-2">Inline list item</ListItem>
+            <ListItem Class="d-inline bg-secondary text-white p-2 me-2">Another inline list item</ListItem>
+            <ListItem Class="d-block bg-success text-white p-2 mb-2">Block list item</ListItem>
+            <ListItem Class="d-inline-block bg-warning text-dark p-2">Inline-block list item</ListItem>
+        </ul>
+    </div>
+
+    <h2>List Items with Bootstrap List Classes</h2>
+    <div class="mb-3">
+        <h3>Bootstrap List Styling</h3>
+        <ul class="list-group">
+            <ListItem Class="list-group-item">Default list group item</ListItem>
+            <ListItem Class="list-group-item list-group-item-primary">Primary list group item</ListItem>
+            <ListItem Class="list-group-item list-group-item-secondary">Secondary list group item</ListItem>
+            <ListItem Class="list-group-item list-group-item-success">Success list group item</ListItem>
+            <ListItem Class="list-group-item list-group-item-danger">Danger list group item</ListItem>
+            <ListItem Class="list-group-item list-group-item-warning">Warning list group item</ListItem>
+            <ListItem Class="list-group-item list-group-item-info">Info list group item</ListItem>
+            <ListItem Class="list-group-item list-group-item-light">Light list group item</ListItem>
+            <ListItem Class="list-group-item list-group-item-dark">Dark list group item</ListItem>
+        </ul>
+    </div>
+
+    <h2>Interactive List Items</h2>
+    <div class="mb-3">
+        <h3>Clickable List Items</h3>
+        <ul class="list-group">
+            <ListItem Class="list-group-item list-group-item-action" style="cursor: pointer;" title="Clickable list item">
+                Clickable list item with pointer cursor and tooltip
+            </ListItem>
+            <ListItem Class="list-group-item list-group-item-action" style="cursor: pointer;" title="Another clickable item">
+                Another clickable list item
+            </ListItem>
+        </ul>
+    </div>
+
+    <h2>List Items with Custom Styling</h2>
+    <div class="mb-3">
+        <h3>Custom Styled List Items</h3>
+        <ul class="list-unstyled">
+            <ListItem Class="custom-list-item" style="font-family: 'Courier New', monospace; font-size: 1.1em; color: #6f42c1; line-height: 1.6; border-left: 4px solid #6f42c1; padding-left: 10px;">
+                Custom styled list item with inline styles - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </ListItem>
+            <ListItem Class="custom-list-item" style="font-family: 'Georgia', serif; font-size: 1.2em; color: #28a745; line-height: 1.8; border-left: 4px solid #28a745; padding-left: 10px;">
+                Another custom styled list item - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </ListItem>
+        </ul>
+    </div>
+
+    <h2>Nested List Items</h2>
+    <div class="mb-3">
+        <h3>Nested List Structure</h3>
+        <ul>
+            <ListItem>Main list item 1
+                <ul>
+                    <ListItem>Nested list item 1.1</ListItem>
+                    <ListItem>Nested list item 1.2</ListItem>
+                    <ListItem>Nested list item 1.3</ListItem>
+                </ul>
+            </ListItem>
+            <ListItem>Main list item 2
+                <ul>
+                    <ListItem>Nested list item 2.1</ListItem>
+                    <ListItem>Nested list item 2.2</ListItem>
+                </ul>
+            </ListItem>
+            <ListItem>Main list item 3</ListItem>
+        </ul>
+    </div>
+
+    <h2>List Item Properties</h2>
+    <div class="bg-light p-3 mb-3">
+        <h3>List Item Features</h3>
+        <p>The ListItem component inherits all properties from the Element base class:</p>
+        <ul>
+            <ListItem><strong>Id:</strong> HTML id attribute</ListItem>
+            <ListItem><strong>Class:</strong> CSS classes (Bootstrap utility classes supported)</ListItem>
+            <ListItem><strong>Style:</strong> Inline CSS styles</ListItem>
+            <ListItem><strong>Title:</strong> Tooltip text</ListItem>
+            <ListItem><strong>Hidden:</strong> Visibility control</ListItem>
+            <ListItem><strong>Display:</strong> CSS display property</ListItem>
+            <ListItem><strong>Margin/Padding:</strong> Spacing utilities</ListItem>
+            <ListItem><strong>Event Handlers:</strong> Click, focus, keyboard events</ListItem>
+        </ul>
+    </div>
+
+    <h2>Responsive List Items</h2>
+    <div class="mb-3">
+        <h3>Responsive Behavior</h3>
+        <ul>
+            <ListItem Class="text-sm-start text-md-center text-lg-end">Responsive text alignment - changes based on screen size</ListItem>
+            <ListItem Class="d-none d-md-block">This list item is hidden on small screens and visible on medium+ screens</ListItem>
+            <ListItem Class="d-block d-md-none">This list item is visible on small screens and hidden on medium+ screens</ListItem>
+        </ul>
+    </div>
+</div>
+
+@code{
+    protected override void OnInitialized()
+    {
+        Logger.LogInformation("ListItems demo page initialized");
+    }
+}
